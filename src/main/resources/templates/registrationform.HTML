@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form id="myForm" action="/registration" method="POST">
+ 
+            <input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+
+            <input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+
+            <input type="text" id="dob" name="dob" onfocus="(this.type='date')" onblur="if(this.value=='') this.type='text'" placeholder="Date of Birth" required>
+
+            <select id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            
+            <select id="hearAbout" name="hearAbout" required>
+                <option value="" id="New">How did you hear about us?</option>
+                <option value="Google / Yahoo">Google / Yahoo</option>
+                <option value="Facebook / Instagram">Facebook / Instagram</option>
+                <option value="Saw a gym / Member of gym">Saw a gym / Member of gym</option>
+            </select>
+
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            <div id="result"></div>
+            <br>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+            <!-- <input type="reset" value="Reset"> -->
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
