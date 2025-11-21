@@ -1,0 +1,14 @@
+# Use an official Java runtime as a parent image
+FROM openjdk:25-jdk-slim
+
+# Set working directory inside the container
+WORKDIR /app
+
+# Copy the JAR file into the container
+COPY target/oracle-reg-app-0.0.1-SNAPSHOT.jar app.jar
+
+# Expose the port Spring Boot runs on (default 8080)
+EXPOSE 8080
+
+# Command to run the JAR
+ENTRYPOINT ["java","-jar","app.jar"]
