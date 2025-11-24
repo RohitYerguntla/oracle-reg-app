@@ -1,0 +1,7 @@
+com\example\registrationapp\controller\RegistrationController.class
+com\example\registrationapp\OracleRegAppApplication.class
+com\example\registrationapp\repository\RegistrationRepository.class
+com\example\registrationapp\repository\EnquiryRepository.class
+com\example\registrationapp\controller\EnquiryController.class
+com\example\registrationapp\entity\EnquiryEntity.class
+com\example\registrationapp\entity\RegistrationEntity.class
